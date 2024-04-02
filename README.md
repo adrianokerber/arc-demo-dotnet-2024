@@ -16,3 +16,4 @@ We will be appling the following design patterns and frameworks in order to full
 5. [Entity Framework](https://learn.microsoft.com/en-us/ef/)
 6. [OpenTelemetry](https://opentelemetry.io/)
 7. Monorepo? - Our repository represents a complete software solution, that can have multiple deployments but sharing the same domain/business logic.
+8. DomainEvents via MediatR or Wolverine
