@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArcDemo2024.Hotel.HttpServi
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deployments", "Deployments", "{69455BFC-2EA2-430D-8C2F-ABEFA4B15E1C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArcDemo2024.Hotel.Test", "tst\ArcDemo2024.Hotel.Test\ArcDemo2024.Hotel.Test.csproj", "{0E0F8103-7D54-4912-BAED-B805BB1911C0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +22,10 @@ Global
 		{B90F05DC-CB93-4D1D-B745-7D41A0B67FE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B90F05DC-CB93-4D1D-B745-7D41A0B67FE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B90F05DC-CB93-4D1D-B745-7D41A0B67FE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E0F8103-7D54-4912-BAED-B805BB1911C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E0F8103-7D54-4912-BAED-B805BB1911C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E0F8103-7D54-4912-BAED-B805BB1911C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E0F8103-7D54-4912-BAED-B805BB1911C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{B90F05DC-CB93-4D1D-B745-7D41A0B67FE4} = {69455BFC-2EA2-430D-8C2F-ABEFA4B15E1C}
