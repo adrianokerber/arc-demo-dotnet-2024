@@ -1,8 +1,9 @@
+using ArcDemo2024.Hotel.Shared.ResultPattern;
 using FluentAssertions;
 
-namespace ArcDemo2024.Hotel.Shared.ResultPattern;
+namespace ArcDemo2024.Hotel.Test.Shared.ResultPattern;
 
-public class TestResultAggregate
+public class Test_ResultAggregate_Behaviour
 {
     [Fact]
     public void Should_ResultAggregate_ReturnFailureTrue()
@@ -17,5 +18,8 @@ public class TestResultAggregate
         // Assert
         resultAggregate.IsFailure
                        .Should().BeTrue();
+        resultAggregate.Errors
+                       .Should().HaveCount(1)
+                       .And.HaveElementAt(0, r2);
     }
 }
