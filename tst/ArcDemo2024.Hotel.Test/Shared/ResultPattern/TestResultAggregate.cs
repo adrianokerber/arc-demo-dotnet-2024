@@ -2,10 +2,10 @@ using FluentAssertions;
 
 namespace ArcDemo2024.Hotel.Shared.ResultPattern;
 
-public class Test_ResultAggregate
+public class TestResultAggregate
 {
     [Fact]
-    public void Should_ResultAggregate_ReturnErrorsList()
+    public void Should_ResultAggregate_ReturnFailureTrue()
     {
         // Arrange
         var r1 = Result<string, Error>.Success("Sucesso!!!");
@@ -15,12 +15,7 @@ public class Test_ResultAggregate
         var resultAggregate = ResultAggregate<string, Error>.From(r1, r2);
         
         // Assert
-        IEnumerable<Error> errors = null;
-        if (resultAggregate.IsFailure)
-        {
-            errors = resultAggregate.Errors.Select(x => x.Error);
-        }
-
-        errors.Should().NotBeNull();
+        resultAggregate.IsFailure
+                       .Should().BeTrue();
     }
 }
