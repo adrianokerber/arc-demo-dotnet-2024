@@ -1,6 +1,0 @@
-@ArcDemo2024.Hotel.HttpService_HostAddress = http://localhost:5058
-
-GET {{ArcDemo2024.Hotel.HttpService_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

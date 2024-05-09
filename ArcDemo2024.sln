@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArcDemo2024.Hotel", "src\ArcDemo2024.Hotel\ArcDemo2024.Hotel.csproj", "{AFC5FBF8-BD57-46F4-BAB0-2561F073BD62}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArcDemo2024.Hotel.HttpService", "src\ArcDemo2024.Hotel.HttpService\ArcDemo2024.Hotel.HttpService.csproj", "{B90F05DC-CB93-4D1D-B745-7D41A0B67FE4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArcDemo2024.Hotel.WebApi", "src\ArcDemo2024.Hotel.WebApi\ArcDemo2024.Hotel.WebApi.csproj", "{B90F05DC-CB93-4D1D-B745-7D41A0B67FE4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deployments", "Deployments", "{69455BFC-2EA2-430D-8C2F-ABEFA4B15E1C}"
 EndProject
