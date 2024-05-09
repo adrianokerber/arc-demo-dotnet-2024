@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using ArcDemo2024.Hotel.Shared.ResultPattern.Original;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ArcDemo2024.Hotel.Shared;

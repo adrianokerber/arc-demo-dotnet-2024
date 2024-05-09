@@ -1,4 +1,5 @@
 using ArcDemo2024.Hotel.Shared;
+using ArcDemo2024.Hotel.Shared.ResultPattern.Original;
 using CSharpFunctionalExtensions;
 
 namespace ArcDemo2024.Hotel.ReservationContext.Aggregates.Reservations;
