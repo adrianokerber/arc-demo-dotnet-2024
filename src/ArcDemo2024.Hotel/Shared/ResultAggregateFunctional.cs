@@ -24,7 +24,7 @@ public abstract class ResultAggregateCommonLogic
     public bool IsFailure => NestedResults.Any(c => c.Value.IsFailure);
     public bool IsSuccess => !IsFailure;
 
-    public void AddResult(string instance, Result result)
+    private void AddResult(string instance, Result result)
     {
         NestedResults.Add(instance, result);
     }
@@ -42,7 +42,7 @@ public abstract class ResultAggregateCommonLogic
     }
 }
 
-
+[Obsolete("Prefer using ResultAggregate from ResultPattern namespace")]
 public sealed class ResultAggregate : ResultAggregateCommonLogic
 {
     private ResultAggregate() : base() { }

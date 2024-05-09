@@ -25,7 +25,7 @@ public sealed class HttpGlobalExceptionFilter : IExceptionFilter
 
         var json = new JsonErrorResponse
         {
-            Messages = new[] { "An error occur.Try it again." }
+            Messages = new[] { "An error occurred. Try again." }
         };
 
         if (_env.IsDevelopment())

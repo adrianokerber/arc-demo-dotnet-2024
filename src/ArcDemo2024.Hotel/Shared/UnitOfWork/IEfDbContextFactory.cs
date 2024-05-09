@@ -4,5 +4,5 @@ namespace ArcDemo2024.Hotel.Shared.UnitOfWork;
 
 public interface IEfDbContextFactory<T> where T : DbContext
 {
-    Task<T> CriarAsync(string codigoTenant);
+    Task<T> CreateAsync(string tenant);
 }
