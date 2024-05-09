@@ -1,7 +1,7 @@
 ﻿using System.Text;
 using CSharpFunctionalExtensions;
 
-namespace ArcDemo2024.Hotel.Shared.ResultPattern.Original;
+namespace ArcDemo2024.Hotel.Shared.ResultPattern.CSharpFuncionalExtensions;
 
 public abstract class ResultAggregateCommonLogic
 {

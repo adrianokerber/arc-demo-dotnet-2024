@@ -1,16 +1,28 @@
-﻿using ArcDemo2024.Hotel.Shared.ResultPattern.Original;
+﻿using ArcDemo2024.Hotel.Shared.ResultPattern.CSharpFuncionalExtensions;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ArcDemo2024.Hotel.Shared;
 
-public sealed class HttpErrorResponseFactory : IService<HttpErrorResponseFactory>
+// TODO: Un improvement could be split the methods of success and failure. Ex: SuccessWith200() instead of Create200().
+public sealed class HttpResponseFactory : IService<HttpResponseFactory>
 {
     private readonly IHttpContextAccessor _httpContextAccessor;
 
-    public HttpErrorResponseFactory(IHttpContextAccessor httpContextAccessor)
+    public HttpResponseFactory(IHttpContextAccessor httpContextAccessor)
     {
         _httpContextAccessor = httpContextAccessor;
+    }
+    
+    public IActionResult Create200(string message, object body)
+    {
+        return new OkObjectResult(
+            new
+            {
+                Status = StatusCodes.Status200OK,
+                Mensagem = message,
+                Data = body
+            });
     }
 
     public IActionResult Create400(string title, string detail)
